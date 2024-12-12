@@ -7,6 +7,17 @@
 - Initialize Vault
 - Login
 
+#### Prepared
+#### Start
+
+```sh
+docker compose up -d
+```
+
+#### Initialize Vault
+#### Login
+
+## Tips
 ## Reference
 
 - [What is Vault](https://developer.hashicorp.com/vault/docs/what-is-vault)

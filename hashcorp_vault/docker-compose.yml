@@ -1,19 +1,18 @@
-version: 3.8
 services:
   vault:
     image: registry.cn-shenzhen.aliyuncs.com/lipaysam/vault:1.13.1
     container_name: vault
     restart: unless-stopped
     ports:
-    - 8200:8200
-    - 8201:8201
+      - 8200:8200
+      - 8201:8201
     environment: []
     cap_add:
-    - IPC_LOCK
+      - IPC_LOCK
     volumes:
-    - ./config/config.json:/vault/config/local.json:ro
-    - ./tls/:/ssl:ro
-    - vault_data:/vault/file
+      - ./config/config.json:/vault/config/local.json:ro
+      - ./tls:/ssl:ro
+      - vault_data:/vault/file
     healthcheck:
       retries: 5
     command: server

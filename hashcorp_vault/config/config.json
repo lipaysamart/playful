@@ -13,8 +13,8 @@
             "tcp": {
                 "address": "0.0.0.0:8200",
                 "tls_disable": "0",
-                "tls_cert_file": "/ssl/cert.crt",
-                "tls_key_file": "/ssl/private.key"
+                "tls_cert_file": "/ssl/docker.local.pem.crt",
+                "tls_key_file": "/ssl/docker.local.pem.key"
             }
         }
     ]
