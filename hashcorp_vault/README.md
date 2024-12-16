@@ -26,20 +26,20 @@ docker compose up -d
 
 首次设置时，会看到以下内容，用于创建我们的初始根密钥，并指定它应该拆分为多少个共享，以及需要提供多少个共享才能恢复它 [Shamir's secret sharing](https://en.wikipedia.org/wiki/Shamir%27s_secret_sharing)
 
-![vault initialize](https://githubfast.com/img/20241214163414.png)
+![vault initialize](./assets/vault-initialize.png)
 
 - Download keys
 
 - Unseal Vault
 
 输入文件中的任意两个 `.keys` 解封 `vault`
-![Unseal Vault](https://githubfast.com/img/20241214164543.png)
+![unseal vault](./assets/unseal-vault.png)
 
 
 ### Login
 
 来到登陆界面后使用 Token 登陆
-![LoginView](https://githubfast.com/img/20241214164833.png)
+![login](./assets/login.png)
 
 ## Conclusion
 
