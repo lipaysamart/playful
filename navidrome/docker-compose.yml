@@ -20,7 +20,7 @@ services:
       ND_BASEURL: ""
     volumes:
       - "data:/data"
-      - "music:/music:ro"  # 冒号左边修改成自己本地的音乐文件夹路径
+      - "/opt/navidrome/music:/music:ro"  # 冒号左边修改成自己本地的音乐文件夹路径
 
   filebrowser:
     image: registry.cn-shenzhen.aliyuncs.com/lipaysam/filebrowser:v2
@@ -34,10 +34,8 @@ services:
     depends_on:
       - navidrome
     volumes:
-      - "db:/database.db"
-      - "music:/srv"  # 冒号左边修改成自己本地的音乐文件夹路径
+      - "/opt/filebrowser/database.db:/database.db"
+      - "/opt/navidrome/music:/srv"  # 冒号左边修改成自己本地的音乐文件夹路径
     restart: unless-stopped
 volumes:
   data:
-  music:
-  db:
