@@ -35,7 +35,6 @@ docker compose up -d
 输入文件中的任意两个 `.keys` 解封 `vault`
 ![unseal vault](./assets/unseal-vault.png)
 
-
 ### Login
 
 来到登陆界面后使用 Token 登陆
@@ -46,6 +45,13 @@ docker compose up -d
 至此使用 `docker` 部署`Hashicorp Vault` 已经完成，可以开始使用啦。
 
 ## Tips
+
+- 生成自签名证书
+
+```sh
+docker run --rm -it -e CERT_CN=homelab -v `pwd`/tls:/ssl registry.cn-shenzhen.aliyuncs.com/lipaysam/certs-maker:v3.6.1 "--CERT_DNS=*.docker.local"
+```
+
 ## Reference
 
 - [What is Vault](https://developer.hashicorp.com/vault/docs/what-is-vault)
