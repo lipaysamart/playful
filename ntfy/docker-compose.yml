@@ -1,0 +1,12 @@
+services:
+  ntfy:
+    image: index.docker.io/binwiederhier/ntfy:v2
+    container_name: ntfy
+    restart: always
+    volumes:
+      - /opt/ntfy/config:/etc/ntfy
+      - data:/var/lib/ntfy
+    command:
+      - serve
+volumes:
+  data:

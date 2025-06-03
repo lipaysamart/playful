@@ -9,4 +9,4 @@ docker-compose up -d
 
 ## Reference
 
-- [NginxProxyManager Doc](in.cn/docs/)
+- [NginxProxyManager Doc](https://nginxproxymanager.com/guide/)

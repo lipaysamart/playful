@@ -1,0 +1,13 @@
+base-url: "http://ntfy.mydomain.com"
+listen-http: ":2586"
+cache-file: "/var/lib/ntfy/cache.db"
+attachment-cache-dir: "/var/lib/ntfy/attachments"
+behind-proxy: true
+enable-login: true
+upstream-base-url: "https://ntfy.sh" # ios 配置即时通知
+auth-file: "/var/lib/ntfy/user.db"
+# auth-default-access: "deny-all"
+web-root: disable
+log-level: info
+log-format: json
+# log-file: /var/log/ntfy.log
